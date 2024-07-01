@@ -29,6 +29,9 @@ namespace AutoResume.Patches
 					wrapper.OnClick.Invoke();
 				}));
 			}
+			var discord = buttons.GetComponentInChildren<DiscordButton>(true);
+			GameObject.DestroyImmediate(discord.GetComponent<SKUSpecificDisabler>());
+			discord.gameObject.SetActive(true);
 		}
 	}
 }
