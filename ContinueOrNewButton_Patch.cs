@@ -19,7 +19,7 @@ namespace AutoResume.Patches
 			if (!didOnce)
 			{
 				didOnce = true;
-				ClickContinueButton(button, wrapper);
+				__instance.StartCoroutine(__instance.WaitFrames(1, () => ClickContinueButton(button, wrapper)));
 			}
 		}
 
