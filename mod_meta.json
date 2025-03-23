@@ -5,5 +5,6 @@
 	"Entrypoint": "AutoResume.Main/Initialize",
 	"Version": "1.0",
 	"ModAssembly": "AutoResume.dll",
-	"MinWinchVersion": "alpha-1.4"
+	"MinWinchVersion": "alpha-1.4",
+	"Conflicts": ["xen.cosmichorrorfishingbuddies"]
 }

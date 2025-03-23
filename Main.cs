@@ -9,6 +9,7 @@ namespace AutoResume
 	{
 		public static void Initialize()
 		{
+			WinchCore.Log.Warn("Auto Resume Initialized");
 			new Harmony("megapiggy.autoresume").PatchAll(Assembly.GetExecutingAssembly());
 		}
 	}
